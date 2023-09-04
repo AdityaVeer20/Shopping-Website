@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glimpse- Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file for styling -->
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="clock">00:00:00</div>
+    <script>
+        // Function to update the digital clock
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update the clock immediately and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+    <header>
+        <h1>Glimpse</h1>
+        <p>Your one-stop Destination for Fashion</p>
+        <a href="#featured-products">Shop Now</a>
+        <br> </br>
+<div></li>
+    <!-- Add Login and Sign Up links -->
+    <a href="#login">Login</a>
+    <a href="#signup">Sign Up</a></div>
+
+    <br></br>
+    
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for products...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <!-- Header Section -->
+
+    <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo.png" alt="Men's Shopping Logo">
+        </div>
+        
+    
+    </div>
+
+
+
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        
+        <ul>
+            <li><a href="#featured-products">Featured Products</a></li>
+            <li><a href="#product-categories">Product Categories</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Featured Products Section -->
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <!-- Add your featured products here -->
+        <div class="product-card">
+            <img src="images (1).jpg" alt="Product 1">
+            <h3>Inky Blue Jeans</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="images.jpg" alt="Product 2">
+            <h3>White Shirt</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="download.jpg" alt="Product 3">
+            <h3>Basketball Jersey</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="download (1).jpg" alt="Product 4">
+            <h3>Black Shirt</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+
+        <div class="product-card">
+            <img src="a1.jpg" alt="Product 5">
+            <h3>Polo Tshirt</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="a2.jpg" alt="Product 6">
+            <h3>Fleece Jacket</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="a3.jpg" alt="Product 7">
+            <h3>Blue Zipper</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="a4.jpg" alt="Product 8">
+            <h3>Pink Hoodie</h3>
+            <p>Price: $XX.XX</p>
+            <a href="#">View Details</a>
+        </div>
+        
+        <!-- Add more product cards as needed -->
+    </section>
+
+    <!-- Product Categories Section -->
+    <section id="product-categories">
+        <h2>Product Categories</h2>
+        <br></br>
+        <!-- Add your product categories here -->
+        <ul>
+            <li><a href="#">Clothing</a></li>
+                <li><a href="#">Footwear</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Grooming</a></li>
+                <li><a href="#">Sports &amp; Fitness</a></li>
+            <!-- Add more categories as needed -->
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <!-- Add customer testimonials here -->
+        <div class="testimonial">
+            <p>"Great products and fast shipping! I'm a satisfied customer."</p>
+            <p>- Veer</p>
+        </div>
+        <div class="testimonial">
+            <p>"The quality of their clothing is top-notch. Highly recommend!"</p>
+            <p>- Sameer</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay up-to-date with the latest trends and offers.</p>
+        <form action="subscribe.php" method="POST"> <!-- Replace with your subscription handling script -->
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <!-- Add a contact form or contact information here -->
+        <p>If you have any questions or need assistance, feel free to contact us at:</p>
+        <p>Email:veeraditya2008@gmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Men's Shopping</p>
+    </footer>
+</body>
+</html>
